@@ -23,6 +23,7 @@ A fully responsive and interactive **Simon Says** memory game built with **HTML,
 
 ```bash
 git clone https://github.com/CodeByAlmas/simon-says-game.git
+```
 
 ### 2. Open the game
 
