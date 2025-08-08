@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simon Says Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Main game title -->
+    <h1>Simon Says</h1>
+
+    <!-- Dynamic level display -->
+    <h2 id="level-title">Press any key to start the game</h2>
+
+    <!-- Player name display -->
+    <h3 id="player-name"></h3>
+
+    <!-- Game button grid (responsive) -->
+    <div class="btn-container">
+      <div class="line">
+        <div class="btn red" id="red"></div>
+        <div class="btn yellow" id="yellow"></div>
+      </div>
+      <div class="line">
+        <div class="btn green" id="green"></div>
+        <div class="btn purple" id="purple"></div>
+      </div>
+    </div>
+
+    <!-- Scoreboard with top 5 players and control buttons -->
+    <div id="scoreboard">
+      <h4>🏆 Top Players</h4>
+      <ul id="score-list"></ul>
+
+      <!-- Buttons to switch players or reset scores -->
+      <div class="scoreboard-buttons">
+        <button id="change-player">Change Player</button>
+        <button id="reset-scores">Reset Scores</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main game logic -->
+  <script src="app.js"></script>
+</body>
+</html>

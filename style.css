@@ -1,0 +1,141 @@
+/* Core styling reset and global font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Background and layout */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#player-name {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #a7f3d0;
+}
+
+/* Game grid layout */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+}
+
+/* Color buttons for game interaction */
+.btn {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 20%;
+  border: 5px solid #333;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.red { background-color: #d95980; }
+.yellow { background-color: #f99b45; }
+.green { background-color: #63aac0; }
+.purple { background-color: #819ff9; }
+
+/* Flash effects */
+.flash {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+.userFlash {
+  box-shadow: 0 0 20px white;
+}
+
+/* Scoreboard design */
+#scoreboard {
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#scoreboard h4 {
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+#scoreboard ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+#scoreboard li {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.scoreboard-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Reusable button style */
+button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2dd4bf;
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #22c55e;
+}
+
+/* Responsive behavior for mobile screens */
+@media (max-width: 600px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2, h3, h4 {
+    font-size: 1rem;
+  }
+}
